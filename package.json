@@ -14,5 +14,8 @@
     "limelight"
   ],
   "author": "Andrew Brandt",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
 }
