@@ -3,7 +3,7 @@ LimeLight nodejs library for publishing files
 
 
 ```
-const LimeLightFileManager = require('./index');
+const LimeLightFileManager = require('limelight-filemanager');
 const fs = require('fs');
 
 var llfm = new LimeLightFileManager({
