@@ -59,7 +59,7 @@ module.exports = class {
         assert.ok(params);
 
         if (!this.loginData)
-            await login();
+            await this.login();
 
         if (!params.token)
             params.token = this.loginData.token;
@@ -129,7 +129,7 @@ module.exports = class {
         assert.ok(params.path);
 
         if (!this.loginData)
-            await login();
+            await this.login();
 
         var splitPath = params.path.split('/');
         var basename = splitPath[splitPath.length - 1];

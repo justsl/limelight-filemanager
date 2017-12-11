@@ -10,6 +10,7 @@ var llfm = new LimeLightFileManager({
     username: '',
     password: '',
     api: 'https://{username}.upload.llnw.net/',
+    expiry: 3600, //Credentials expiry
     //subdir: '/llfm'
 });
 
