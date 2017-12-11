@@ -12,13 +12,16 @@ module.exports = function (options) {
         request(
             options
             , (error, response, body) => {
-                if (response.statusCode == 200) {
+                if (error) {
+                    reject(error);
+                } else if (response.statusCode == 200) {
                     response.body = body;
-                    resolve(resolve);
+                    resolve(response);
                 } else {
                     reject({
                         status: response.statusCode,
-                        body: body
+                        body: body,
+                        headers: response.headers
                     });
                 }
             }
